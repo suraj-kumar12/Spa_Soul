@@ -33,7 +33,7 @@ export const BUSINESS_INFO: BusinessConfig = {
 export const GOOGLE_MAPS_REFERENCE_URL = 'https://maps.app.goo.gl/AZwKFCzVan3EpQck9';
 
 export const GOOGLE_MAPS_EMBED_URL =
-  'https://maps.google.com/maps?q=Spa+Soul,+G-2,3+Safal+Square,+University+Road,+Vesu,+Surat,+Gujarat+395007&t=&z=16&ie=UTF8&iwloc=&output=embed';
+  'https://www.google.com/maps/embed?pb=!3m2!1sen!2sin!4v1793016856015!5m2!1sen!2sin!6m8!1m7!1s20ghg7KAlzpnQQpcbjxq6A!2m2!1d21.14935400237414!2d72.77251451755147!3f77.84028894218648!4f-10.494947725514663!5f0.4000000000000002';
 
 export const GOOGLE_MAPS_DIRECTIONS_URL =
   'https://www.google.com/maps/dir/?api=1&destination=Spa+Soul,+G-2,3+Safal+Square,+University+Road,+Vesu,+Surat,+Gujarat+395007';

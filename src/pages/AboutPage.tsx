@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Sparkles, ShieldCheck, Heart, Droplets, ArrowRight } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/business';
 import { FallbackImage } from '../components/FallbackImage';
-import { GoogleMapSection } from '../components/GoogleMapSection';
 
 export const AboutPage: React.FC = () => {
   return (
@@ -150,9 +149,6 @@ export const AboutPage: React.FC = () => {
           </div>
         </div>
       </section>
-
-      {/* Sanctuary Location Map */}
-      <GoogleMapSection />
     </div>
   );
 };

@@ -17,7 +17,6 @@ import {
   Send,
 } from 'lucide-react';
 import { WhatsAppIcon } from '../components/WhatsAppIcon';
-import { GoogleMapSection } from '../components/GoogleMapSection';
 import { BUSINESS_INFO, GOOGLE_MAPS_DIRECTIONS_URL } from '../data/business';
 import { SPA_SERVICES } from '../data/services';
 
@@ -499,11 +498,6 @@ Hello, please let me know if this slot can be confirmed. Thank you!`;
 
         </div>
       </section>
-
-      {/* Spa Soul Sanctuary Location Map */}
-      <div className="mt-16">
-        <GoogleMapSection />
-      </div>
     </div>
   );
 };

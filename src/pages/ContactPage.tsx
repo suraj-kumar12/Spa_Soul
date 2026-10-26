@@ -6,7 +6,6 @@ import { z } from 'zod';
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle2, Navigation, AlertCircle, MessageSquare } from 'lucide-react';
 import { WhatsAppIcon } from '../components/WhatsAppIcon';
 import { BUSINESS_INFO, GOOGLE_MAPS_DIRECTIONS_URL } from '../data/business';
-import { GoogleMapSection } from '../components/GoogleMapSection';
 
 const contactSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters' }),
@@ -316,9 +315,6 @@ export const ContactPage: React.FC = () => {
           </div>
         </div>
       </section>
-
-      {/* Map Section */}
-      <GoogleMapSection />
     </div>
   );
 };

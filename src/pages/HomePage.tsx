@@ -26,7 +26,6 @@ import { BUSINESS_INFO } from '../data/business';
 import { SPA_VIDEOS } from '../data/media';
 import { FallbackImage } from '../components/FallbackImage';
 import { BookingForm } from '../components/BookingForm';
-import { GoogleMapSection } from '../components/GoogleMapSection';
 import { VideoShowcase } from '../components/VideoShowcase';
 import { VideoModal } from '../components/VideoModal';
 
@@ -818,9 +817,6 @@ export const HomePage: React.FC = () => {
           </div>
         </div>
       </section>
-
-      {/* 11. Location, Address & Google Maps */}
-      <GoogleMapSection />
 
       {/* Cinematic 4K Video Modal */}
       <VideoModal
