@@ -2,13 +2,23 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/business';
+import { SEOHead } from '../components/SEOHead';
+import { Breadcrumbs } from '../components/Breadcrumbs';
 
 export const TermsPage: React.FC = () => {
   return (
     <div className="bg-white pb-24">
+      <SEOHead
+        title="Terms & Conditions | Spa Soul Surat"
+        description="Terms of service, modesty draping, and appointment scheduling conditions for Spa Soul in Surat."
+        canonicalPath="/terms"
+        breadcrumbs={[{ name: 'Terms & Conditions', item: '/terms' }]}
+      />
+
       {/* Header (Bright & Clean) */}
       <section className="bg-gradient-to-b from-[#FDFCF9] via-[#FAF7F2] to-white border-b border-[#E8DFD1] py-16 text-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Breadcrumbs items={[{ name: 'Terms & Conditions', item: '/terms' }]} className="justify-center flex mb-4" />
           <div className="inline-block mb-3">
             <img
               src="/assets/aistudio/image_7dcfa224.png"
@@ -36,7 +46,7 @@ export const TermsPage: React.FC = () => {
               1. Acceptance of Terms
             </h2>
             <p>
-              By accessing this website or scheduling treatments at <strong>Spa Soul</strong> (G-2,3 Safal Square, University Road, Vesu, Surat, Gujarat 395007), you acknowledge and agree to abide by the policies and conditions outlined herein.
+              By accessing this website or scheduling treatments at <strong>Spa Soul</strong> (4QXG+JCJ, Someshwara Enclave, Vesu, Surat, Gujarat 395007, India), you acknowledge and agree to abide by the policies and conditions outlined herein.
             </p>
           </div>
 

@@ -5,6 +5,7 @@ import { Logo } from './Logo';
 import { WhatsAppIcon } from './WhatsAppIcon';
 import { BUSINESS_INFO, GOOGLE_MAPS_DIRECTIONS_URL } from '../data/business';
 import { SPA_SERVICES } from '../data/services';
+import { trackPhoneCall } from '../utils/analytics';
 
 export const Footer: React.FC = () => {
   return (
@@ -126,6 +127,7 @@ export const Footer: React.FC = () => {
                 <Phone className="w-4 h-4 text-[#8C6830] shrink-0" />
                 <a
                   href={`tel:${BUSINESS_INFO.phone}`}
+                  onClick={() => trackPhoneCall('Footer Details')}
                   className="font-mono font-bold text-sm text-[#1F1424] hover:text-[#7D4971] transition-colors"
                 >
                   {BUSINESS_INFO.phoneDisplay}
@@ -166,7 +168,7 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Bar: Copyright & Legal */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-medium text-[#5C4863]">
-          <p>© {new Date().getFullYear()} Spa Soul. All rights reserved. G-2,3 Safal Square, University Road, Vesu, Surat.</p>
+          <p>© {new Date().getFullYear()} Spa Soul. All rights reserved. 4QXG+JCJ, Someshwara Enclave, Vesu, Surat, Gujarat 395007, India.</p>
           <div className="flex items-center gap-5">
             <Link to="/privacy" className="hover:text-[#1F1424] transition-colors">
               Privacy Policy

@@ -19,6 +19,9 @@ import {
 import { WhatsAppIcon } from '../components/WhatsAppIcon';
 import { BUSINESS_INFO, GOOGLE_MAPS_DIRECTIONS_URL } from '../data/business';
 import { SPA_SERVICES } from '../data/services';
+import { SEOHead } from '../components/SEOHead';
+import { Breadcrumbs } from '../components/Breadcrumbs';
+import { trackWhatsAppClick } from '../utils/analytics';
 
 export const WhatsAppPage: React.FC = () => {
   const [copied, setCopied] = useState(false);
@@ -70,6 +73,7 @@ Hello, please let me know if this slot can be confirmed. Thank you!`;
 
   const openWhatsApp = (customText?: string) => {
     const text = customText || constructedMessage;
+    trackWhatsAppClick('Concierge Page Template', text);
     const encoded = encodeURIComponent(text);
     const url = `https://wa.me/${BUSINESS_INFO.whatsapp}?text=${encoded}`;
     window.open(url, '_blank', 'noopener,noreferrer');
@@ -77,6 +81,14 @@ Hello, please let me know if this slot can be confirmed. Thank you!`;
 
   return (
     <div className="bg-[#FAF7F2] min-h-screen pb-20">
+      <SEOHead
+        title="WhatsApp Spa Concierge | Spa Soul Surat"
+        description="Connect directly with Spa Soul concierge on WhatsApp for quick slot booking, couple package inquiries, and parking directions in Vesu, Surat."
+        canonicalPath="/whatsapp"
+        keywords="spa soul whatsapp, book massage on whatsapp surat, spa concierge vesu, best spa in surat"
+        breadcrumbs={[{ name: 'WhatsApp Concierge', item: '/whatsapp' }]}
+      />
+
       {/* Hero Header */}
       <section className="relative bg-[#1A0E1C] text-white pt-20 pb-24 overflow-hidden border-b border-[#3D2542]">
         <div className="absolute inset-0 opacity-25 pointer-events-none overflow-hidden">
@@ -460,7 +472,7 @@ Hello, please let me know if this slot can be confirmed. Thank you!`;
                   <div>
                     <h4 className="font-bold text-[#1F1424]">Google Maps Pin &amp; Parking Guide</h4>
                     <p className="text-[#6B5A70] leading-relaxed">
-                      Receive our exact parking entry at Safal Square, University Road, Vesu directly on your phone.
+                      Receive our exact parking entry at Someshwara Enclave, Vesu, Surat directly on your phone.
                     </p>
                   </div>
                 </div>

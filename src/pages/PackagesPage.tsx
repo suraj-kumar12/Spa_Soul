@@ -3,13 +3,24 @@ import { Link } from 'react-router-dom';
 import { Sparkles, Clock, Check, Heart, ArrowRight } from 'lucide-react';
 import { SPA_PACKAGES } from '../data/packages';
 import { BUSINESS_INFO } from '../data/business';
+import { SEOHead } from '../components/SEOHead';
+import { Breadcrumbs } from '../components/Breadcrumbs';
 
 export const PackagesPage: React.FC = () => {
   return (
     <div className="bg-white pb-24">
+      <SEOHead
+        title="Luxury Spa Packages in Surat | Spa Soul"
+        description="Indulge in curated multi-hour wellness rituals and couple spa packages in Surat. The Soul Rejuvenation Ritual, Imperial Couple Sanctuary, and Total Body Renewal."
+        canonicalPath="/packages"
+        keywords="luxury spa packages in surat, couple spa in surat, spa packages surat, couple massage vesu surat, wellness rituals surat, best spa in surat"
+        breadcrumbs={[{ name: 'Packages', item: '/packages' }]}
+      />
+
       {/* Header (Bright & Clean) */}
       <section className="bg-gradient-to-b from-[#FDFCF9] via-[#FAF7F2] to-white border-b border-[#E8DFD1] py-16 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl relative z-10">
+          <Breadcrumbs items={[{ name: 'Packages', item: '/packages' }]} className="justify-center flex mb-4" />
           <div className="inline-block mb-3">
             <img
               src="/assets/aistudio/image_7dcfa224.png"

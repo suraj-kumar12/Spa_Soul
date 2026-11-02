@@ -5,6 +5,7 @@ import { z } from 'zod';
 import { CheckCircle2, Clock, Calendar, Phone, Mail, User, Sparkles, Loader2, AlertCircle } from 'lucide-react';
 import { SPA_SERVICES } from '../data/services';
 import { BUSINESS_INFO } from '../data/business';
+import { trackBookingSubmission } from '../utils/analytics';
 
 const bookingSchema = z.object({
   fullName: z
@@ -68,6 +69,7 @@ export const BookingForm: React.FC<BookingFormProps> = ({ initialTreatment }) =>
       const refId = `SOUL-${Date.now().toString().slice(-6)}`;
       setBookingRef(refId);
       setSubmissionSuccess(data);
+      trackBookingSubmission(data.treatment, refId);
     } catch {
       // In case of error
     } finally {

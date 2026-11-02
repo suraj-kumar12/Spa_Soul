@@ -6,6 +6,9 @@ import { z } from 'zod';
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle2, Navigation, AlertCircle, MessageSquare } from 'lucide-react';
 import { WhatsAppIcon } from '../components/WhatsAppIcon';
 import { BUSINESS_INFO, GOOGLE_MAPS_DIRECTIONS_URL } from '../data/business';
+import { SEOHead } from '../components/SEOHead';
+import { Breadcrumbs } from '../components/Breadcrumbs';
+import { trackContactSubmission } from '../utils/analytics';
 
 const contactSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters' }),
@@ -32,14 +35,24 @@ export const ContactPage: React.FC = () => {
   const onSubmit = async (data: ContactFormValues) => {
     await new Promise((resolve) => setTimeout(resolve, 600));
     setIsSent(true);
+    trackContactSubmission(data.subject);
     reset();
   };
 
   return (
     <div className="bg-white">
+      <SEOHead
+        title="Contact Spa Soul | Spa in Vesu, Surat"
+        description="Get directions, phone number, and operating hours for Spa Soul at Someshwara Enclave, Vesu, Surat. Direct WhatsApp concierge and appointments available."
+        canonicalPath="/contact"
+        keywords="contact spa soul, spa in vesu surat, spa near me, spa soul phone number, spa soul address surat, best spa in surat"
+        breadcrumbs={[{ name: 'Contact', item: '/contact' }]}
+      />
+
       {/* Header (Bright & Clean) */}
       <section className="bg-gradient-to-b from-[#FDFCF9] via-[#FAF7F2] to-white border-b border-[#E8DFD1] py-16 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl relative z-10">
+          <Breadcrumbs items={[{ name: 'Contact Us', item: '/contact' }]} className="justify-center flex mb-4" />
           <div className="inline-block mb-3">
             <img
               src="/assets/aistudio/image_7dcfa224.png"

@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import { ChevronDown, Search, Sparkles, Phone, HelpCircle } from 'lucide-react';
 import { SPA_FAQS } from '../data/faqs';
 import { BUSINESS_INFO } from '../data/business';
+import { SEOHead } from '../components/SEOHead';
+import { Breadcrumbs } from '../components/Breadcrumbs';
+import { getFAQSchema } from '../utils/seoSchemas';
 
 export const FaqsPage: React.FC = () => {
   const [openIds, setOpenIds] = useState<Record<string, boolean>>({ 'faq-1': true, 'faq-3': true });
@@ -25,9 +28,19 @@ export const FaqsPage: React.FC = () => {
 
   return (
     <div className="bg-white pb-24">
+      <SEOHead
+        title="Spa Soul FAQs | Spa & Massage in Surat"
+        description="Frequently asked questions regarding spa etiquette, hygiene protocols, booking policies, and health precautions at Spa Soul in Vesu, Surat."
+        canonicalPath="/faqs"
+        keywords="spa soul faqs, spa massage in surat, spa etiquette surat, massage guidelines vesu, best spa in surat"
+        breadcrumbs={[{ name: 'FAQs', item: '/faqs' }]}
+        schema={getFAQSchema(SPA_FAQS)}
+      />
+
       {/* Header (Bright & Clean) */}
       <section className="bg-gradient-to-b from-[#FDFCF9] via-[#FAF7F2] to-white border-b border-[#E8DFD1] py-16 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl relative z-10">
+          <Breadcrumbs items={[{ name: 'FAQs', item: '/faqs' }]} className="justify-center flex mb-4" />
           <div className="inline-block mb-3">
             <img
               src="/assets/aistudio/image_7dcfa224.png"

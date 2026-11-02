@@ -4,6 +4,7 @@ import { Menu, X, Phone, Calendar } from 'lucide-react';
 import { Logo } from './Logo';
 import { WhatsAppIcon } from './WhatsAppIcon';
 import { BUSINESS_INFO } from '../data/business';
+import { trackPhoneCall } from '../utils/analytics';
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -90,6 +91,7 @@ export const Navbar: React.FC = () => {
 
               <a
                 href={`tel:${BUSINESS_INFO.phone}`}
+                onClick={() => trackPhoneCall('Navbar Header')}
                 className="hidden xl:inline-flex items-center gap-2 text-xs font-semibold text-[#36223B] hover:text-[#7D4971] transition-colors"
                 title="Direct Wellness Concierge"
               >

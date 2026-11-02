@@ -1,0 +1,23 @@
+{
+  "name": "Spa Soul — Luxury Spa & Wellness Sanctuary",
+  "short_name": "Spa Soul",
+  "description": "Premier luxury massage & wellness sanctuary in Surat, Gujarat offering authentic bodywork rituals.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF7F2",
+  "theme_color": "#140916",
+  "icons": [
+    {
+      "src": "/assets/aistudio/image_7dcfa224.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/aistudio/image_7dcfa224.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

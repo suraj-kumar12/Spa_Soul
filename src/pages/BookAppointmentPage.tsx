@@ -4,6 +4,8 @@ import { Sparkles, Phone, Clock, ShieldCheck, MapPin, Calendar, Heart } from 'lu
 import { WhatsAppIcon } from '../components/WhatsAppIcon';
 import { BookingForm } from '../components/BookingForm';
 import { BUSINESS_INFO } from '../data/business';
+import { SEOHead } from '../components/SEOHead';
+import { Breadcrumbs } from '../components/Breadcrumbs';
 
 export const BookAppointmentPage: React.FC = () => {
   const [searchParams] = useSearchParams();
@@ -11,9 +13,18 @@ export const BookAppointmentPage: React.FC = () => {
 
   return (
     <div className="bg-white pb-24">
+      <SEOHead
+        title="Book a Spa Appointment in Surat | Spa Soul"
+        description="Reserve your luxury massage session or couple sanctuary at Spa Soul in Vesu, Surat. Instant reference confirmation, verified therapists, and private suites."
+        canonicalPath="/book"
+        keywords="book spa appointment in surat, book massage surat, spa appointment vesu, reserve couple spa surat, best spa in surat"
+        breadcrumbs={[{ name: 'Booking', item: '/book' }]}
+      />
+
       {/* Header (Bright & Clean) */}
       <section className="bg-gradient-to-b from-[#FDFCF9] via-[#FAF7F2] to-white border-b border-[#E8DFD1] py-16 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-2xl relative z-10">
+          <Breadcrumbs items={[{ name: 'Book Appointment', item: '/book' }]} className="justify-center flex mb-4" />
           <div className="inline-block mb-3">
             <img
               src="/assets/aistudio/image_7dcfa224.png"
@@ -120,8 +131,8 @@ export const BookAppointmentPage: React.FC = () => {
                       <MapPin className="w-4 h-4" />
                     </div>
                     <div>
-                      <strong className="text-[#1F1424] font-bold text-sm">Parking at Safal Square:</strong>
-                      <p className="mt-0.5 font-normal">Dedicated customer parking is available on-site at Safal Square, University Road, Vesu.</p>
+                      <strong className="text-[#1F1424] font-bold text-sm">Parking at Someshwara Enclave:</strong>
+                      <p className="mt-0.5 font-normal">Dedicated customer parking is available on-site at Someshwara Enclave, Vesu, Surat.</p>
                     </div>
                   </div>
                 </div>

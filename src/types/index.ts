@@ -64,6 +64,7 @@ export interface BusinessConfig {
   name: string;
   tagline: string;
   legalEntity: string;
+  website?: string;
   address: {
     line1: string;
     line2: string;

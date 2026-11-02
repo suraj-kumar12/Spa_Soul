@@ -1,6 +1,6 @@
 # Spa Soul — Luxury Spa & Wellness Sanctuary
 
-A bespoke, production-ready luxury spa and massage wellness website designed specifically for **Spa Soul**, located at **Luxuria Business Hub, Surat - Dumas Road, near V.R Mall, New Magdalla, Surat, Gujarat 395007**.
+A bespoke, production-ready luxury spa and massage wellness website designed specifically for **Spa Soul**, located at **4QXG+JCJ, Someshwara Enclave, Vesu, Surat, Gujarat 395007, India**.
 
 ---
 
@@ -8,7 +8,8 @@ A bespoke, production-ready luxury spa and massage wellness website designed spe
 
 - **Brand:** Spa Soul
 - **Category:** Luxury Spa, Massage Spa, Wellness Centre
-- **Address:** Showroom No-5, Luxuria Business Hub, Surat - Dumas Rd, near V.R Mall, New Magdalla, Surat, Gujarat 395007
+- **Address:** 4QXG+JCJ, Someshwara Enclave, Vesu, Surat, Gujarat 395007, India
+- **Website:** [https://spa-soul.shop/](https://spa-soul.shop/)
 - **Phone:** `8893885879` (Direct Click-to-Call: `tel:8893885879`)
 - **Email:** `chandanbhai11331@gmail.com` (Direct Mailto: `mailto:chandanbhai11331@gmail.com`)
 - **Hours:** Monday – Sunday (All 7 Days), 10:00 AM – 09:30 PM

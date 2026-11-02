@@ -2,13 +2,23 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, ArrowLeft } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/business';
+import { SEOHead } from '../components/SEOHead';
+import { Breadcrumbs } from '../components/Breadcrumbs';
 
 export const PrivacyPolicyPage: React.FC = () => {
   return (
     <div className="bg-white pb-24">
+      <SEOHead
+        title="Privacy Policy | Spa Soul Surat"
+        description="Privacy policy and guest confidentiality practices for Spa Soul Luxury Spa & Wellness Sanctuary in Surat."
+        canonicalPath="/privacy"
+        breadcrumbs={[{ name: 'Privacy Policy', item: '/privacy' }]}
+      />
+
       {/* Header (Bright & Clean) */}
       <section className="bg-gradient-to-b from-[#FDFCF9] via-[#FAF7F2] to-white border-b border-[#E8DFD1] py-16 text-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Breadcrumbs items={[{ name: 'Privacy Policy', item: '/privacy' }]} className="justify-center flex mb-4" />
           <div className="inline-block mb-3">
             <img
               src="/assets/aistudio/image_7dcfa224.png"
@@ -36,7 +46,7 @@ export const PrivacyPolicyPage: React.FC = () => {
               1. Commitment to Guest Confidentiality
             </h2>
             <p>
-              At <strong>Spa Soul</strong>, located at G-2,3 Safal Square, University Road, Vesu, Surat, Gujarat 395007, we respect your privacy. This policy outlines how we collect, handle, and protect your personal information when you use our website or schedule services.
+              At <strong>Spa Soul</strong>, located at 4QXG+JCJ, Someshwara Enclave, Vesu, Surat, Gujarat 395007, India, we respect your privacy. This policy outlines how we collect, handle, and protect your personal information when you use our website or schedule services.
             </p>
           </div>
 

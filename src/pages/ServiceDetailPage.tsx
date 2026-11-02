@@ -5,6 +5,9 @@ import { WhatsAppIcon } from '../components/WhatsAppIcon';
 import { SPA_SERVICES } from '../data/services';
 import { BUSINESS_INFO } from '../data/business';
 import { FallbackImage } from '../components/FallbackImage';
+import { SEOHead } from '../components/SEOHead';
+import { Breadcrumbs } from '../components/Breadcrumbs';
+import { getServiceSchema } from '../utils/seoSchemas';
 
 export const ServiceDetailPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -19,16 +22,27 @@ export const ServiceDetailPage: React.FC = () => {
     (s) => s.id !== service.id && s.category === service.category
   ).slice(0, 3);
 
+  const breadcrumbsList = [
+    { name: 'Treatments', item: '/services' },
+    { name: service.name, item: `/services/${service.slug}` }
+  ];
+
   return (
     <div className="bg-white pb-24">
+      <SEOHead
+        title={`${service.name} in Surat | Spa Soul Sanctuary`}
+        description={`${service.description} Experience authentic ${service.name} at Spa Soul in Someshwara Enclave, Vesu, Surat. Starting at ${service.pricePlaceholder}.`}
+        canonicalPath={`/services/${service.slug}`}
+        keywords={`${service.name.toLowerCase()} surat, ${service.name.toLowerCase()} in vesu, body massage in surat, best ${service.name.toLowerCase()} surat, massage therapy surat`}
+        schema={getServiceSchema(service)}
+        breadcrumbs={breadcrumbsList}
+        ogImage={service.imageUrl}
+      />
+
       {/* Breadcrumb Header (Clean & Light) */}
-      <div className="bg-[#FAF7F2] border-b border-[#E8DFD1] py-3.5">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-xs font-semibold text-[#5C4863] flex items-center gap-2">
-          <Link to="/" className="hover:text-[#1F1424] transition-colors">Home</Link>
-          <span>/</span>
-          <Link to="/services" className="hover:text-[#1F1424] transition-colors">Treatments</Link>
-          <span>/</span>
-          <span className="text-[#1F1424] font-bold truncate">{service.name}</span>
+      <div className="bg-[#FAF7F2] border-b border-[#E8DFD1] py-2">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Breadcrumbs items={breadcrumbsList} />
         </div>
       </div>
 

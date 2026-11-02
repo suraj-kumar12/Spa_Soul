@@ -53,7 +53,7 @@ export const FallbackImage: React.FC<FallbackImageProps> = ({
         src={src}
         alt={alt}
         referrerPolicy="no-referrer"
-        loading="lazy"
+        loading={props.loading || 'lazy'}
         onLoad={() => setIsLoading(false)}
         onError={() => {
           setHasError(true);

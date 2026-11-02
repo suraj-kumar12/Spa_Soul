@@ -8,7 +8,7 @@ export const SAMPLE_TESTIMONIALS: Testimonial[] = [
     serviceTaken: 'Aromatherapy Massage',
     rating: 5,
     date: 'Sample Guest Feedback',
-    reviewText: 'The ambiance at Spa Soul is tranquil and pristine. Located at Safal Square on University Road in Vesu, it is a serene haven away from the city traffic. The therapist was attentive to my shoulder tension.',
+    reviewText: 'The ambiance at Spa Soul is tranquil and pristine. Located at Someshwara Enclave in Vesu, it is a serene haven away from the city traffic. The therapist was attentive to my shoulder tension.',
     verifiedLabel: 'Sample Client Experience'
   },
   {

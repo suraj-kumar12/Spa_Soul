@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { MapPin, Navigation, Phone, Mail, Clock, Check, Copy } from 'lucide-react';
 import { BUSINESS_INFO, GOOGLE_MAPS_EMBED_URL, GOOGLE_MAPS_DIRECTIONS_URL } from '../data/business';
+import { trackDirectionsClick } from '../utils/analytics';
 
 export const GoogleMapSection: React.FC = () => {
   const [copied, setCopied] = useState(false);
@@ -22,7 +23,7 @@ export const GoogleMapSection: React.FC = () => {
             Find Serenity at Spa Soul
           </h2>
           <p className="text-sm text-[#3B2A40] mt-3 leading-relaxed font-normal">
-            G-2,3 Safal Square, University Road, Vesu, Surat (Near i contrast Ice Cream – Depot).
+            4QXG+JCJ, Someshwara Enclave, Vesu, Surat, Gujarat 395007, India.
           </p>
         </div>
 
@@ -159,10 +160,10 @@ export const GoogleMapSection: React.FC = () => {
                 Spa Soul
               </h4>
               <p className="text-[11px] text-[#3B2A40] mt-1 leading-snug">
-                G-2,3 Safal Square, University Road, Vesu, Surat
+                4QXG+JCJ, Someshwara Enclave, Vesu, Surat
               </p>
               <p className="text-[10px] text-[#8C6830] font-semibold mt-0.5">
-                Near i contrast Ice Cream – Depot
+                Someshwara Enclave, Vesu
               </p>
               <div className="mt-2.5 flex items-center justify-between gap-2 pt-2 border-t border-[#F0E6D8] text-[11px]">
                 <span className="text-[#8C6830] font-bold">★ 4.9 · Luxury Spa</span>
@@ -170,6 +171,7 @@ export const GoogleMapSection: React.FC = () => {
                   href={GOOGLE_MAPS_DIRECTIONS_URL}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackDirectionsClick('Google Map Card')}
                   className="inline-flex items-center gap-1 font-bold text-[#38162B] hover:text-[#7D4971] transition-colors"
                 >
                   <Navigation className="w-3 h-3 text-[#8C6830]" />
@@ -179,7 +181,7 @@ export const GoogleMapSection: React.FC = () => {
             </div>
 
             <iframe
-              title="Spa Soul - G-2,3 Safal Square, University Road, Vesu, Surat"
+              title="Spa Soul - 4QXG+JCJ, Someshwara Enclave, Vesu, Surat"
               src={GOOGLE_MAPS_EMBED_URL}
               width="100%"
               height="100%"

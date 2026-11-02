@@ -5,6 +5,8 @@ import { GalleryItem } from '../types';
 import { FallbackImage } from '../components/FallbackImage';
 import { VideoShowcase } from '../components/VideoShowcase';
 import { BUSINESS_INFO } from '../data/business';
+import { SEOHead } from '../components/SEOHead';
+import { Breadcrumbs } from '../components/Breadcrumbs';
 
 export const GalleryPage: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string>('All');
@@ -34,9 +36,18 @@ export const GalleryPage: React.FC = () => {
 
   return (
     <div className="bg-white pb-24">
+      <SEOHead
+        title="Spa Soul Gallery | Luxury Spa in Surat"
+        description="View high-definition photos and cinematic ambience reels of Spa Soul's private treatment suites, VIP couple rooms, and pure botanical elements in Vesu, Surat."
+        canonicalPath="/gallery"
+        keywords="spa soul gallery, luxury spa in surat, spa images surat, massage suite photos vesu, couple spa room surat, best spa in surat"
+        breadcrumbs={[{ name: 'Gallery', item: '/gallery' }]}
+      />
+
       {/* Header (Bright & Clean) */}
       <section className="bg-gradient-to-b from-[#FDFCF9] via-[#FAF7F2] to-white border-b border-[#E8DFD1] py-16 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl relative z-10">
+          <Breadcrumbs items={[{ name: 'Visual Gallery', item: '/gallery' }]} className="justify-center flex mb-4" />
           <div className="inline-block mb-3">
             <img
               src="/assets/aistudio/image_7dcfa224.png"
@@ -51,7 +62,7 @@ export const GalleryPage: React.FC = () => {
             The Spa Soul Visual Gallery
           </h1>
           <p className="text-base text-[#3B2A40] mt-3 leading-relaxed font-normal">
-            Immerse yourself in our private therapy suites, authentic video reels, tranquil lounges, and pure botanical elements at Safal Square, Vesu, Surat.
+            Immerse yourself in our private therapy suites, authentic video reels, tranquil lounges, and pure botanical elements at Someshwara Enclave, Vesu, Surat.
           </p>
         </div>
       </section>

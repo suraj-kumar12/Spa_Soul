@@ -28,6 +28,8 @@ import { FallbackImage } from '../components/FallbackImage';
 import { BookingForm } from '../components/BookingForm';
 import { VideoShowcase } from '../components/VideoShowcase';
 import { VideoModal } from '../components/VideoModal';
+import { SEOHead } from '../components/SEOHead';
+import { getBaseDaySpaSchema, getOrganizationSchema, getWebSiteSchema, getFAQSchema } from '../utils/seoSchemas';
 
 export const HomePage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
@@ -52,6 +54,19 @@ export const HomePage: React.FC = () => {
 
   return (
     <div className="space-y-0 bg-white">
+      <SEOHead
+        title="Best Spa in Surat | Spa Soul – Luxury Spa & Wellness"
+        description="Experience premier luxury spa & body massage in Surat at Spa Soul. Certified therapists, organic botanical oils, Thai, deep tissue, and couple massage suites in Vesu."
+        canonicalPath="/"
+        keywords="best spa in surat, spa in surat, body massage in surat, luxury spa in surat, thai massage in surat, full body massage in surat, spa near me, spa in vesu surat"
+        schema={[
+          getBaseDaySpaSchema(),
+          getOrganizationSchema(),
+          getWebSiteSchema(),
+          getFAQSchema(SPA_FAQS)
+        ]}
+      />
+
       {/* 1. Hero Section (Bright, Clean, and Elegant) */}
       <section className="relative overflow-hidden bg-gradient-to-b from-[#FDFCF9] via-[#FAF7F2] to-white border-b border-[#EFE8DD] pt-10 pb-20 lg:pt-14 lg:pb-24">
         {/* Subtle Decorative Golden Radiance */}
@@ -80,8 +95,8 @@ export const HomePage: React.FC = () => {
                 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.15] text-[#1F1424] tracking-tight"
                 style={{ textWrap: 'balance' }}
               >
-                Where Stillness Awakens <br className="hidden sm:inline" />
-                <span className="italic font-normal text-[#8C6830]">Your Inner Soul</span>
+                Best Luxury Spa in Surat — <br className="hidden sm:inline" />
+                <span className="italic font-normal text-[#8C6830]">Where Stillness Awakens Your Soul</span>
               </h1>
 
               <p className="text-base sm:text-lg text-[#3B2A40] leading-relaxed max-w-xl font-normal">
@@ -225,7 +240,7 @@ export const HomePage: React.FC = () => {
                       Spa Soul Sanctuary
                     </p>
                     <p className="text-xs text-[#5C4863] mt-0.5 font-medium">
-                      G-2,3 Safal Square · University Road · Vesu, Surat
+                      4QXG+JCJ, Someshwara Enclave · Vesu, Surat
                     </p>
                   </div>
                 </div>
@@ -290,7 +305,7 @@ export const HomePage: React.FC = () => {
               </p>
 
               <p className="text-sm sm:text-base text-[#3B2A40] leading-relaxed">
-                Every massage stroke, steam inhalation, and cold-pressed botanical blend is chosen with intention. From our location at <strong className="text-[#1F1424] font-bold">G-2,3 Safal Square on University Road, Vesu (near i contrast Ice Cream – Depot)</strong>, our certified practitioners guide you through personalized sessions that alleviate chronic pain, renew vital energy, and restore restful sleep.
+                Every massage stroke, steam inhalation, and cold-pressed botanical blend is chosen with intention. From our location at <strong className="text-[#1F1424] font-bold">4QXG+JCJ, Someshwara Enclave, Vesu, Surat</strong>, our certified practitioners guide you through personalized sessions that alleviate chronic pain, renew vital energy, and restore restful sleep.
               </p>
 
               <div className="pt-2">
@@ -561,7 +576,7 @@ export const HomePage: React.FC = () => {
               </div>
               <h3 className="font-serif text-xl font-bold text-[#1F1424]">Prime Vesu Location</h3>
               <p className="text-xs text-[#3B2A40] leading-relaxed">
-                G-2,3 Safal Square, University Road, Vesu, Surat (near i contrast Ice Cream – Depot), with easy accessibility and dedicated parking.
+                4QXG+JCJ, Someshwara Enclave, Vesu, Surat, Gujarat 395007, India, with easy accessibility and dedicated parking.
               </p>
             </div>
           </div>

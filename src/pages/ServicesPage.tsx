@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { Search, Sparkles, Clock, ArrowRight, Check } from 'lucide-react';
 import { SPA_SERVICES } from '../data/services';
 import { FallbackImage } from '../components/FallbackImage';
+import { SEOHead } from '../components/SEOHead';
+import { Breadcrumbs } from '../components/Breadcrumbs';
 
 export const ServicesPage: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string>('All');
@@ -22,9 +24,18 @@ export const ServicesPage: React.FC = () => {
 
   return (
     <div className="bg-white pb-24">
+      <SEOHead
+        title="Spa & Body Massage Services in Surat | Spa Soul"
+        description="Explore 10 signature body massage and therapeutic rituals at Spa Soul Surat. Swedish, Deep Tissue, Thai, Aromatherapy, Foot Reflexology, and VIP Couple suites."
+        canonicalPath="/services"
+        keywords="spa services surat, body massage in surat, thai massage in surat, full body massage in surat, deep tissue massage surat, couple spa surat"
+        breadcrumbs={[{ name: 'Services', item: '/services' }]}
+      />
+
       {/* Editorial Header (Bright & Clean) */}
       <section className="bg-gradient-to-b from-[#FDFCF9] via-[#FAF7F2] to-white border-b border-[#E8DFD1] py-16 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl relative z-10">
+          <Breadcrumbs items={[{ name: 'Spa Services', item: '/services' }]} className="justify-center flex mb-4" />
           <div className="inline-block mb-3">
             <img
               src="/assets/aistudio/image_7dcfa224.png"

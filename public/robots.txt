@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://spasoul.in/sitemap.xml
+Sitemap: https://spa-soul.shop/sitemap.xml

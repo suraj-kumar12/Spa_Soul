@@ -1,10 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Sparkles, ArrowLeft, Home } from 'lucide-react';
+import { SEOHead } from '../components/SEOHead';
 
 export const NotFoundPage: React.FC = () => {
   return (
     <div className="min-h-[70vh] flex items-center justify-center bg-white py-20 px-4">
+      <SEOHead
+        title="Page Not Found | Spa Soul Surat"
+        description="The requested page could not be found. Return to the Spa Soul luxury wellness sanctuary homepage."
+        noindex={true}
+      />
       <div className="max-w-md w-full bg-[#FAF7F2] border-2 border-[#E8DFD1] rounded-3xl p-8 sm:p-10 text-center shadow-xs space-y-6">
         <div className="inline-block mb-1">
           <img

@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Play, Pause, Volume2, VolumeX, Maximize2, Sparkles, MessageSquare, ArrowRight, ShieldCheck } from 'lucide-react';
 import { SPA_VIDEOS, SpaVideo } from '../data/media';
 import { BUSINESS_INFO } from '../data/business';
+import { trackWhatsAppClick } from '../utils/analytics';
 
 interface VideoShowcaseProps {
   className?: string;
@@ -52,8 +53,9 @@ export const VideoShowcase: React.FC<VideoShowcaseProps> = ({ className = '', au
   };
 
   const handleWhatsAppInquiry = () => {
+    trackWhatsAppClick('Video Reel Inquiry', selectedVideo.title);
     const text = encodeURIComponent(
-      `Hello Spa Soul, I watched the "${selectedVideo.title}" film on your website and would like to inquire about booking a similar session at Safal Square, Vesu, Surat.`
+      `Hello Spa Soul, I watched the "${selectedVideo.title}" film on your website and would like to inquire about booking a similar session at Someshwara Enclave, Vesu, Surat.`
     );
     window.open(`https://wa.me/${BUSINESS_INFO.whatsapp}?text=${text}`, '_blank');
   };

@@ -3,13 +3,24 @@ import { Link } from 'react-router-dom';
 import { Sparkles, ShieldCheck, Heart, Droplets, ArrowRight } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/business';
 import { FallbackImage } from '../components/FallbackImage';
+import { SEOHead } from '../components/SEOHead';
+import { Breadcrumbs } from '../components/Breadcrumbs';
 
 export const AboutPage: React.FC = () => {
   return (
     <div className="bg-white">
+      <SEOHead
+        title="About Spa Soul | Luxury Wellness Sanctuary in Surat"
+        description="Discover the philosophy, pristine hygiene standards, and ethical botanical artistry behind Spa Soul, the premier luxury massage sanctuary in Vesu, Surat."
+        canonicalPath="/about"
+        keywords="about spa soul, luxury spa in vesu surat, massage spa in vesu, wellness centre in surat, professional body massage surat"
+        breadcrumbs={[{ name: 'About', item: '/about' }]}
+      />
+
       {/* Editorial Header (Bright, Clean, and Elegant) */}
       <section className="bg-gradient-to-b from-[#FDFCF9] via-[#FAF7F2] to-white border-b border-[#E8DFD1] py-16 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center max-w-3xl">
+          <Breadcrumbs items={[{ name: 'About Spa Soul', item: '/about' }]} className="justify-center flex mb-4" />
           <div className="inline-block mb-3">
             <img
               src="/assets/aistudio/image_7dcfa224.png"
@@ -48,7 +59,7 @@ export const AboutPage: React.FC = () => {
               </p>
 
               <p className="text-sm sm:text-base text-[#3B2A40] leading-relaxed">
-                Nestled within <strong className="text-[#1F1424] font-bold">Safal Square on University Road, Vesu</strong> (near i contrast Ice Cream – Depot), our centre is purposefully insulated from the surrounding city bustle. We designed our private therapy suites with sound-dampening architectural elements, soft indirect lighting, and ambient acoustics to foster an immediate sense of nervous system decompression.
+                Nestled within <strong className="text-[#1F1424] font-bold">Someshwara Enclave, Vesu, Surat</strong>, our centre is purposefully insulated from the surrounding city bustle. We designed our private therapy suites with sound-dampening architectural elements, soft indirect lighting, and ambient acoustics to foster an immediate sense of nervous system decompression.
               </p>
 
               <p className="text-sm sm:text-base text-[#3B2A40] leading-relaxed">
@@ -128,7 +139,7 @@ export const AboutPage: React.FC = () => {
                 Experience Spa Soul in Person
               </h2>
               <p className="text-sm text-[#3B2A40] leading-relaxed font-normal">
-                Located at G-2,3 Safal Square, University Road, Vesu, Surat (near i contrast Ice Cream – Depot). Open daily from 10:00 AM to 09:30 PM.
+                Located at 4QXG+JCJ, Someshwara Enclave, Vesu, Surat, Gujarat 395007, India. Open daily from 10:00 AM to 09:30 PM.
               </p>
             </div>
 

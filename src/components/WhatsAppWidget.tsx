@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { X, Send, Clock, CheckCheck, Sparkles, ExternalLink } from 'lucide-react';
 import { WhatsAppIcon } from './WhatsAppIcon';
 import { BUSINESS_INFO } from '../data/business';
+import { trackWhatsAppClick } from '../utils/analytics';
 
 export const WhatsAppWidget: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,6 +18,7 @@ export const WhatsAppWidget: React.FC = () => {
 
   const handleSend = (textToSend?: string) => {
     const text = (textToSend || customMessage || 'Hello Spa Soul, I would like to inquire about your wellness services.').trim();
+    trackWhatsAppClick('Floating Widget', text);
     const encoded = encodeURIComponent(text);
     const url = `https://wa.me/${BUSINESS_INFO.whatsapp}?text=${encoded}`;
     window.open(url, '_blank', 'noopener,noreferrer');
