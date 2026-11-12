@@ -17,7 +17,7 @@ import {
   Send,
 } from 'lucide-react';
 import { WhatsAppIcon } from '../components/WhatsAppIcon';
-import { BUSINESS_INFO, GOOGLE_MAPS_DIRECTIONS_URL } from '../data/business';
+import { BUSINESS_INFO, GOOGLE_MAPS_DIRECTIONS_URL, TARGET_KEYWORDS_STRING } from '../data/business';
 import { SPA_SERVICES } from '../data/services';
 import { SEOHead } from '../components/SEOHead';
 import { Breadcrumbs } from '../components/Breadcrumbs';
@@ -82,10 +82,10 @@ Hello, please let me know if this slot can be confirmed. Thank you!`;
   return (
     <div className="bg-[#FAF7F2] min-h-screen pb-20">
       <SEOHead
-        title="WhatsApp Spa Concierge | Spa Soul Surat"
-        description="Connect directly with Spa Soul concierge on WhatsApp for quick slot booking, couple package inquiries, and parking directions in Vesu, Surat."
+        title="WhatsApp Concierge Booking | Spa in Vesu Surat | Spa Soul"
+        description="Connect instantly with Spa Soul on WhatsApp for appointments, couple spa packages, and full body massage slots at our luxury wellness sanctuary in Vesu Surat."
         canonicalPath="/whatsapp"
-        keywords="spa soul whatsapp, book massage on whatsapp surat, spa concierge vesu, best spa in surat"
+        keywords={TARGET_KEYWORDS_STRING}
         breadcrumbs={[{ name: 'WhatsApp Concierge', item: '/whatsapp' }]}
       />
 
@@ -111,7 +111,7 @@ Hello, please let me know if this slot can be confirmed. Thank you!`;
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-[#F4ECE1] tracking-tight leading-tight">
-            Connect with Spa Soul on WhatsApp
+            Connect with Spa Soul on WhatsApp · Spa in Vesu Surat
           </h1>
 
           <p className="text-sm sm:text-base text-[#D4C3DB] max-w-2xl mx-auto leading-relaxed">
@@ -472,7 +472,7 @@ Hello, please let me know if this slot can be confirmed. Thank you!`;
                   <div>
                     <h4 className="font-bold text-[#1F1424]">Google Maps Pin &amp; Parking Guide</h4>
                     <p className="text-[#6B5A70] leading-relaxed">
-                      Receive our exact parking entry at Someshwara Enclave, Vesu, Surat directly on your phone.
+                      Receive our exact parking entry at Safal Square, Vesu, Surat directly on your phone.
                     </p>
                   </div>
                 </div>

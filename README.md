@@ -1,6 +1,6 @@
 # Spa Soul — Luxury Spa & Wellness Sanctuary
 
-A bespoke, production-ready luxury spa and massage wellness website designed specifically for **Spa Soul**, located at **4QXG+JCJ, Someshwara Enclave, Vesu, Surat, Gujarat 395007, India**.
+A bespoke, production-ready luxury spa and massage wellness website designed specifically for **Spa Soul**, located at **3rd Floor, Safal Square, S-10, Vesu, Surat, Gujarat 395007, India**.
 
 ---
 
@@ -8,7 +8,7 @@ A bespoke, production-ready luxury spa and massage wellness website designed spe
 
 - **Brand:** Spa Soul
 - **Category:** Luxury Spa, Massage Spa, Wellness Centre
-- **Address:** 4QXG+JCJ, Someshwara Enclave, Vesu, Surat, Gujarat 395007, India
+- **Address:** 3rd Floor, Safal Square, S-10, Vesu, Surat, Gujarat 395007, India
 - **Website:** [https://spa-soul.shop/](https://spa-soul.shop/)
 - **Phone:** `8893885879` (Direct Click-to-Call: `tel:8893885879`)
 - **Email:** `chandanbhai11331@gmail.com` (Direct Mailto: `mailto:chandanbhai11331@gmail.com`)

@@ -41,7 +41,7 @@ export const SPA_FAQS: FAQItem[] = [
     id: 'faq-7',
     category: 'Booking & Policies',
     question: 'Where exactly is Spa Soul located in Surat?',
-    answer: 'Spa Soul is conveniently located at 4QXG+JCJ, Someshwara Enclave, Vesu, Surat, Gujarat 395007, India. Dedicated customer parking is available on-site at Someshwara Enclave.'
+    answer: 'Spa Soul is conveniently located at 3rd Floor, Safal Square, S-10, Vesu, Surat, Gujarat 395007, India. Dedicated customer parking is available on-site at Safal Square.'
   },
   {
     id: 'faq-8',

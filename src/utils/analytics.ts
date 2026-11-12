@@ -38,8 +38,12 @@ export const initGA = (): void => {
   isInitialized = true;
 };
 
+let lastTrackedPath = '';
+
 export const trackPageView = (path: string, title?: string): void => {
   if (typeof window === 'undefined' || !window.gtag || !GA_MEASUREMENT_ID) return;
+  if (lastTrackedPath === path) return;
+  lastTrackedPath = path;
   window.gtag('event', 'page_view', {
     page_path: path,
     page_title: title || document.title,
@@ -87,6 +91,6 @@ export const trackDirectionsClick = (source: string): void => {
   trackEvent('directions_click', {
     event_category: 'Engagement',
     event_label: source,
-    destination: 'Someshwara Enclave, Vesu, Surat',
+    destination: 'Safal Square, Vesu, Surat',
   });
 };

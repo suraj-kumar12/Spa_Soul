@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Sparkles, Clock, Check, Heart, ArrowRight } from 'lucide-react';
 import { SPA_PACKAGES } from '../data/packages';
-import { BUSINESS_INFO } from '../data/business';
+import { BUSINESS_INFO, TARGET_KEYWORDS_STRING } from '../data/business';
 import { SEOHead } from '../components/SEOHead';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 
@@ -10,10 +10,10 @@ export const PackagesPage: React.FC = () => {
   return (
     <div className="bg-white pb-24">
       <SEOHead
-        title="Luxury Spa Packages in Surat | Spa Soul"
-        description="Indulge in curated multi-hour wellness rituals and couple spa packages in Surat. The Soul Rejuvenation Ritual, Imperial Couple Sanctuary, and Total Body Renewal."
+        title="Luxury Spa Packages & Couple Spa in Vesu Surat | Spa Soul"
+        description="Indulge in curated wellness packages and couple spa in Vesu Surat. Multi-hour rituals, full body massage in Surat, and restorative body scrubs at Spa Soul."
         canonicalPath="/packages"
-        keywords="luxury spa packages in surat, couple spa in surat, spa packages surat, couple massage vesu surat, wellness rituals surat, best spa in surat"
+        keywords={TARGET_KEYWORDS_STRING}
         breadcrumbs={[{ name: 'Packages', item: '/packages' }]}
       />
 
@@ -24,18 +24,18 @@ export const PackagesPage: React.FC = () => {
           <div className="inline-block mb-3">
             <img
               src="/assets/aistudio/image_7dcfa224.png"
-              alt="Spa Soul"
+              alt="Spa Soul - Luxury Spa Packages in Vesu Surat"
               className="h-14 w-auto object-contain mx-auto"
             />
           </div>
           <p className="text-xs uppercase tracking-widest text-[#8C6830] font-bold mb-2">
-            Multi-Therapy Journeys
+            Multi-Therapy Journeys · Vesu Surat
           </p>
           <h1 className="font-serif text-4xl sm:text-5xl font-bold text-[#1F1424]" style={{ textWrap: 'balance' }}>
-            Curated Spa Packages & Pricing
+            Curated Spa Packages & Couple Spa in Vesu Surat
           </h1>
           <p className="text-base text-[#3B2A40] mt-3 leading-relaxed font-normal">
-            Thoughtfully orchestrated multi-hour rituals that combine exfoliating body scrubs, therapeutic massages, and facial touch for holistic renewal.
+            Thoughtfully orchestrated multi-hour rituals that combine exfoliating body scrubs, full body massage, and facial touch for holistic renewal at Safal Square, Vesu.
           </p>
         </div>
       </section>

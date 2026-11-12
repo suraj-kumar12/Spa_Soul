@@ -3,7 +3,7 @@ import { useSearchParams, Link } from 'react-router-dom';
 import { Sparkles, Phone, Clock, ShieldCheck, MapPin, Calendar, Heart } from 'lucide-react';
 import { WhatsAppIcon } from '../components/WhatsAppIcon';
 import { BookingForm } from '../components/BookingForm';
-import { BUSINESS_INFO } from '../data/business';
+import { BUSINESS_INFO, TARGET_KEYWORDS_STRING } from '../data/business';
 import { SEOHead } from '../components/SEOHead';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 
@@ -14,10 +14,10 @@ export const BookAppointmentPage: React.FC = () => {
   return (
     <div className="bg-white pb-24">
       <SEOHead
-        title="Book a Spa Appointment in Surat | Spa Soul"
-        description="Reserve your luxury massage session or couple sanctuary at Spa Soul in Vesu, Surat. Instant reference confirmation, verified therapists, and private suites."
+        title="Book Spa Appointment in Vesu Surat | Spa Soul"
+        description="Reserve your luxury full body massage or couple spa in Vesu Surat at Spa Soul. Quick concierge confirmation, private suites, and verified certified therapists."
         canonicalPath="/book"
-        keywords="book spa appointment in surat, book massage surat, spa appointment vesu, reserve couple spa surat, best spa in surat"
+        keywords={TARGET_KEYWORDS_STRING}
         breadcrumbs={[{ name: 'Booking', item: '/book' }]}
       />
 
@@ -28,18 +28,18 @@ export const BookAppointmentPage: React.FC = () => {
           <div className="inline-block mb-3">
             <img
               src="/assets/aistudio/image_7dcfa224.png"
-              alt="Spa Soul"
+              alt="Spa Soul - Book Spa in Vesu Surat"
               className="h-14 w-auto object-contain mx-auto"
             />
           </div>
           <p className="text-xs uppercase tracking-widest text-[#8C6830] font-bold mb-2">
-            Concierge Scheduling
+            Concierge Scheduling · Vesu Surat
           </p>
           <h1 className="font-serif text-3xl sm:text-5xl font-bold text-[#1F1424]" style={{ textWrap: 'balance' }}>
-            Reserve Your Spa Soul Journey
+            Reserve Your Spa Appointment in Vesu Surat
           </h1>
           <p className="text-sm text-[#3B2A40] mt-3 leading-relaxed font-normal">
-            Fill in your preferred therapy and time slot. Our concierge will review therapist availability and call you directly to finalize your appointment.
+            Fill in your preferred therapy and time slot at Safal Square, Vesu. Our concierge will review therapist availability and call you directly to finalize your appointment.
           </p>
         </div>
       </section>
@@ -131,8 +131,8 @@ export const BookAppointmentPage: React.FC = () => {
                       <MapPin className="w-4 h-4" />
                     </div>
                     <div>
-                      <strong className="text-[#1F1424] font-bold text-sm">Parking at Someshwara Enclave:</strong>
-                      <p className="mt-0.5 font-normal">Dedicated customer parking is available on-site at Someshwara Enclave, Vesu, Surat.</p>
+                      <strong className="text-[#1F1424] font-bold text-sm">Parking at Safal Square:</strong>
+                      <p className="mt-0.5 font-normal">Dedicated customer parking is available on-site at Safal Square, Vesu, Surat.</p>
                     </div>
                   </div>
                 </div>

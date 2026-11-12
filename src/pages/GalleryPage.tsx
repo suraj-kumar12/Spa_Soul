@@ -4,7 +4,7 @@ import { SPA_GALLERY } from '../data/gallery';
 import { GalleryItem } from '../types';
 import { FallbackImage } from '../components/FallbackImage';
 import { VideoShowcase } from '../components/VideoShowcase';
-import { BUSINESS_INFO } from '../data/business';
+import { BUSINESS_INFO, TARGET_KEYWORDS_STRING } from '../data/business';
 import { SEOHead } from '../components/SEOHead';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 
@@ -37,10 +37,10 @@ export const GalleryPage: React.FC = () => {
   return (
     <div className="bg-white pb-24">
       <SEOHead
-        title="Spa Soul Gallery | Luxury Spa in Surat"
-        description="View high-definition photos and cinematic ambience reels of Spa Soul's private treatment suites, VIP couple rooms, and pure botanical elements in Vesu, Surat."
+        title="Sanctuary Gallery | Luxury Spa in Vesu Surat | Spa Soul"
+        description="Explore authentic photos and 4K ambience reels of private treatment suites, VIP couple rooms, and botanical elements at Spa Soul, the best luxury spa in Vesu Surat."
         canonicalPath="/gallery"
-        keywords="spa soul gallery, luxury spa in surat, spa images surat, massage suite photos vesu, couple spa room surat, best spa in surat"
+        keywords={TARGET_KEYWORDS_STRING}
         breadcrumbs={[{ name: 'Gallery', item: '/gallery' }]}
       />
 
@@ -51,18 +51,18 @@ export const GalleryPage: React.FC = () => {
           <div className="inline-block mb-3">
             <img
               src="/assets/aistudio/image_7dcfa224.png"
-              alt="Spa Soul"
+              alt="Spa Soul - Luxury Spa in Vesu Surat Gallery"
               className="h-14 w-auto object-contain mx-auto"
             />
           </div>
           <p className="text-xs uppercase tracking-widest text-[#8C6830] font-bold mb-2">
-            Sanctuary Atmosphere & Reels
+            Sanctuary Atmosphere & Reels · Vesu Surat
           </p>
           <h1 className="font-serif text-4xl sm:text-5xl font-bold text-[#1F1424]" style={{ textWrap: 'balance' }}>
             The Spa Soul Visual Gallery
           </h1>
           <p className="text-base text-[#3B2A40] mt-3 leading-relaxed font-normal">
-            Immerse yourself in our private therapy suites, authentic video reels, tranquil lounges, and pure botanical elements at Someshwara Enclave, Vesu, Surat.
+            Immerse yourself in our private therapy suites, authentic video reels, tranquil lounges, and pure botanical elements at Safal Square, Vesu, Surat.
           </p>
         </div>
       </section>

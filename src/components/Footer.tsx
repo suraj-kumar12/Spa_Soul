@@ -5,7 +5,7 @@ import { Logo } from './Logo';
 import { WhatsAppIcon } from './WhatsAppIcon';
 import { BUSINESS_INFO, GOOGLE_MAPS_DIRECTIONS_URL } from '../data/business';
 import { SPA_SERVICES } from '../data/services';
-import { trackPhoneCall } from '../utils/analytics';
+import { trackPhoneCall, trackDirectionsClick } from '../utils/analytics';
 
 export const Footer: React.FC = () => {
   return (
@@ -116,6 +116,7 @@ export const Footer: React.FC = () => {
                     href={GOOGLE_MAPS_DIRECTIONS_URL}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => trackDirectionsClick('Footer')}
                     className="inline-flex items-center gap-1 text-[#8C6830] font-bold mt-1.5 hover:underline"
                   >
                     Get Directions <ArrowUpRight className="w-3 h-3" />
@@ -168,7 +169,7 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Bar: Copyright & Legal */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-medium text-[#5C4863]">
-          <p>© {new Date().getFullYear()} Spa Soul. All rights reserved. 4QXG+JCJ, Someshwara Enclave, Vesu, Surat, Gujarat 395007, India.</p>
+          <p>© {new Date().getFullYear()} Spa Soul. All rights reserved. {BUSINESS_INFO.address.fullFormatted}</p>
           <div className="flex items-center gap-5">
             <Link to="/privacy" className="hover:text-[#1F1424] transition-colors">
               Privacy Policy

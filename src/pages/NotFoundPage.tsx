@@ -7,15 +7,15 @@ export const NotFoundPage: React.FC = () => {
   return (
     <div className="min-h-[70vh] flex items-center justify-center bg-white py-20 px-4">
       <SEOHead
-        title="Page Not Found | Spa Soul Surat"
-        description="The requested page could not be found. Return to the Spa Soul luxury wellness sanctuary homepage."
+        title="Page Not Found (404) | Spa Soul Surat"
+        description="The requested page could not be found. Return to the Spa Soul luxury spa in Vesu Surat homepage."
         noindex={true}
       />
       <div className="max-w-md w-full bg-[#FAF7F2] border-2 border-[#E8DFD1] rounded-3xl p-8 sm:p-10 text-center shadow-xs space-y-6">
         <div className="inline-block mb-1">
           <img
             src="/assets/aistudio/image_7dcfa224.png"
-            alt="Spa Soul"
+            alt="Spa Soul - Luxury Spa in Vesu Surat"
             className="h-12 w-auto object-contain mx-auto"
           />
         </div>

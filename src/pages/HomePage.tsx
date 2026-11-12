@@ -22,7 +22,7 @@ import { SPA_PACKAGES } from '../data/packages';
 import { SPA_FAQS } from '../data/faqs';
 import { SAMPLE_TESTIMONIALS } from '../data/reviews';
 import { SPA_GALLERY } from '../data/gallery';
-import { BUSINESS_INFO } from '../data/business';
+import { BUSINESS_INFO, TARGET_KEYWORDS_STRING } from '../data/business';
 import { SPA_VIDEOS } from '../data/media';
 import { FallbackImage } from '../components/FallbackImage';
 import { BookingForm } from '../components/BookingForm';
@@ -55,10 +55,10 @@ export const HomePage: React.FC = () => {
   return (
     <div className="space-y-0 bg-white">
       <SEOHead
-        title="Best Spa in Surat | Spa Soul – Luxury Spa & Wellness"
-        description="Experience premier luxury spa & body massage in Surat at Spa Soul. Certified therapists, organic botanical oils, Thai, deep tissue, and couple massage suites in Vesu."
+        title="Spa in Vesu Surat | Spa Soul — Luxury Spa & Wellness Sanctuary"
+        description="Spa Soul is the premier luxury spa in Vesu Surat offering full body massage in Vesu Surat, couple spa in Vesu Surat, authentic Thai massage in Surat, and deep tissue therapy at Safal Square, Vesu."
         canonicalPath="/"
-        keywords="best spa in surat, spa in surat, body massage in surat, luxury spa in surat, thai massage in surat, full body massage in surat, spa near me, spa in vesu surat"
+        keywords={TARGET_KEYWORDS_STRING}
         schema={[
           getBaseDaySpaSchema(),
           getOrganizationSchema(),
@@ -81,7 +81,7 @@ export const HomePage: React.FC = () => {
               <div className="inline-block mb-1">
                 <img
                   src="/assets/aistudio/image_7dcfa224.png"
-                  alt="Spa Soul Luxury Wellness"
+                  alt="Spa Soul - Luxury Spa in Vesu Surat"
                   className="h-16 sm:h-20 w-auto object-contain drop-shadow-xs"
                 />
               </div>
@@ -95,12 +95,12 @@ export const HomePage: React.FC = () => {
                 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.15] text-[#1F1424] tracking-tight"
                 style={{ textWrap: 'balance' }}
               >
-                Best Luxury Spa in Surat — <br className="hidden sm:inline" />
+                Premier Luxury Spa in Vesu Surat — <br className="hidden sm:inline" />
                 <span className="italic font-normal text-[#8C6830]">Where Stillness Awakens Your Soul</span>
               </h1>
 
               <p className="text-base sm:text-lg text-[#3B2A40] leading-relaxed max-w-xl font-normal">
-                Immerse your senses in Surat’s premier wellness haven. From restorative Swedish and therapeutic Deep Tissue bodywork to private VIP couple spa suites, experience bespoke therapies designed to melt fatigue and restore deep serenity.
+                Immerse your senses at the best luxury spa in Vesu Surat. From restorative full body massage in Vesu Surat, deep tissue muscle recovery, and traditional Thai massage to private couple spa suites in Safal Square, Vesu, experience authentic rejuvenation at the top-rated spa in Surat.
               </p>
 
               {/* Action Buttons with High-Contrast Legibility & Video Trigger */}
@@ -240,7 +240,7 @@ export const HomePage: React.FC = () => {
                       Spa Soul Sanctuary
                     </p>
                     <p className="text-xs text-[#5C4863] mt-0.5 font-medium">
-                      4QXG+JCJ, Someshwara Enclave · Vesu, Surat
+                      3rd Floor, Safal Square, S-10 · Vesu, Surat
                     </p>
                   </div>
                 </div>
@@ -305,7 +305,7 @@ export const HomePage: React.FC = () => {
               </p>
 
               <p className="text-sm sm:text-base text-[#3B2A40] leading-relaxed">
-                Every massage stroke, steam inhalation, and cold-pressed botanical blend is chosen with intention. From our location at <strong className="text-[#1F1424] font-bold">4QXG+JCJ, Someshwara Enclave, Vesu, Surat</strong>, our certified practitioners guide you through personalized sessions that alleviate chronic pain, renew vital energy, and restore restful sleep.
+                Every massage stroke, steam inhalation, and cold-pressed botanical blend is chosen with intention. From our location at <strong className="text-[#1F1424] font-bold">3rd Floor, Safal Square, S-10, Vesu, Surat</strong>, our certified practitioners guide you through personalized sessions that alleviate chronic pain, renew vital energy, and restore restful sleep.
               </p>
 
               <div className="pt-2">
@@ -355,7 +355,7 @@ export const HomePage: React.FC = () => {
                 Handcrafted Rituals
               </p>
               <h2 className="font-serif text-3xl sm:text-4xl text-[#1F1424] font-bold" style={{ textWrap: 'balance' }}>
-                Curated Spa Treatments
+                Curated Spa Treatments in Vesu Surat
               </h2>
             </div>
 
@@ -462,11 +462,11 @@ export const HomePage: React.FC = () => {
                   className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-[#1F1424]"
                   style={{ textWrap: 'balance' }}
                 >
-                  The Royal Couple Spa Sanctuary
+                  The Royal Couple Spa Sanctuary in Vesu Surat
                 </h2>
 
                 <p className="text-sm sm:text-base text-[#3B2A40] leading-relaxed">
-                  Step into an expansive private sanctuary designed for shared restoration. Featuring side-by-side plush massage tables, soft ambient candlelight, soothing rose water foot soaks, and dual synchronized therapists dedicated entirely to your comfort.
+                  Step into an expansive private sanctuary designed for shared restoration. As the premier couple spa in Vesu Surat, our VIP suite features side-by-side plush massage tables, soft ambient candlelight, soothing rose water foot soaks, and dual synchronized therapists dedicated to the best couple spa experience in Surat.
                 </p>
 
                 <div className="space-y-3 pt-2">
@@ -535,7 +535,7 @@ export const HomePage: React.FC = () => {
               The Spa Soul Standard
             </p>
             <h2 className="font-serif text-3xl sm:text-4xl text-[#1F1424] font-bold" style={{ textWrap: 'balance' }}>
-              Why Guests Return to Spa Soul
+              Why Guests Return to Spa Soul — Best Spa in Surat
             </h2>
           </div>
 
@@ -576,7 +576,7 @@ export const HomePage: React.FC = () => {
               </div>
               <h3 className="font-serif text-xl font-bold text-[#1F1424]">Prime Vesu Location</h3>
               <p className="text-xs text-[#3B2A40] leading-relaxed">
-                4QXG+JCJ, Someshwara Enclave, Vesu, Surat, Gujarat 395007, India, with easy accessibility and dedicated parking.
+                3rd Floor, Safal Square, S-10, Vesu, Surat, Gujarat 395007, India, with easy accessibility and dedicated parking.
               </p>
             </div>
           </div>
@@ -591,7 +591,7 @@ export const HomePage: React.FC = () => {
               Holistic Programs
             </p>
             <h2 className="font-serif text-3xl sm:text-4xl text-[#1F1424] font-bold" style={{ textWrap: 'balance' }}>
-              Signature Spa Packages
+              Signature Spa Packages & Full Body Massage in Surat
             </h2>
             <p className="text-sm text-[#3B2A40] mt-3 font-normal">
               Multi-therapy rituals carefully structured for comprehensive bodily restoration.
@@ -741,7 +741,7 @@ export const HomePage: React.FC = () => {
             Online Reservation Desk
           </p>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-[#1F1424]" style={{ textWrap: 'balance' }}>
-            Book Your Spa Soul Experience
+            Book Your Spa Soul Experience — Luxury Spa in Vesu Surat
           </h2>
           <p className="text-sm text-[#3B2A40] max-w-lg mx-auto mb-10 leading-relaxed font-normal">
             Select your preferred treatment, date, and time. Our concierge will review room availability and contact you on your mobile number to confirm your reservation.

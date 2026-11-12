@@ -1,4 +1,4 @@
-import { BUSINESS_INFO, GOOGLE_MAPS_REFERENCE_URL } from '../data/business';
+import { BUSINESS_INFO, GOOGLE_MAPS_REFERENCE_URL, BUSINESS_COORDINATES } from '../data/business';
 import { Service, FAQItem } from '../types';
 
 export const SITE_URL = 'https://spa-soul.shop';
@@ -24,7 +24,7 @@ export const getBaseDaySpaSchema = () => {
       `${SITE_URL}/assets/spa/couple_spa.jpg`,
       LOGO_IMAGE
     ],
-    description: 'Premier luxury wellness and massage sanctuary in Surat offering Swedish Massage, Deep Tissue, Thai, Aromatherapy, Body Scrubs, and VIP Couple Spa rituals at Someshwara Enclave, Vesu.',
+    description: 'Premier luxury wellness and massage sanctuary in Surat offering Swedish Massage, Deep Tissue, Thai, Aromatherapy, Body Scrubs, and VIP Couple Spa rituals at Safal Square, Vesu.',
     telephone: '+918893885879',
     email: BUSINESS_INFO.email,
     priceRange: '₹₹',
@@ -41,8 +41,8 @@ export const getBaseDaySpaSchema = () => {
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 21.1490625,
-      longitude: 72.7760625
+      latitude: BUSINESS_COORDINATES.latitude,
+      longitude: BUSINESS_COORDINATES.longitude
     },
     openingHoursSpecification: [
       {

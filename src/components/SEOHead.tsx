@@ -69,6 +69,9 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     setMeta('property', 'og:description', description);
     setMeta('property', 'og:url', canonicalUrl);
     setMeta('property', 'og:image', fullOgImage);
+    setMeta('property', 'og:image:width', '1200');
+    setMeta('property', 'og:image:height', '630');
+    setMeta('property', 'og:image:alt', title);
     setMeta('property', 'og:site_name', 'Spa Soul');
     setMeta('property', 'og:locale', 'en_IN');
 
@@ -132,6 +135,9 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
       <meta property="og:description" content={description} />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:image" content={fullOgImage} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content={title} />
       <meta property="og:site_name" content="Spa Soul" />
       <meta property="og:locale" content="en_IN" />
       <meta name="twitter:card" content="summary_large_image" />

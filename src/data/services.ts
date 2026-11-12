@@ -35,8 +35,8 @@ export const SPA_SERVICES: Service[] = [
       'Severe varicose veins',
       'Recent surgeries (under 6 weeks)'
     ],
-    imageUrl: 'https://i.pinimg.com/1200x/15/55/07/155507ca774e67567e733a0f0ee593df.jpg',
-    imageAlt: 'Swedish massage therapy with warm botanical oils and soothing gliding strokes',
+    imageUrl: '/assets/spa/swedish.jpg',
+    imageAlt: 'Swedish massage in Vesu Surat with warm botanical oils and soothing gliding strokes',
     isPopular: true
   },
   {
@@ -73,8 +73,8 @@ export const SPA_SERVICES: Service[] = [
       'Blood clotting disorders or anticoagulant medication',
       'Severe osteoporosis'
     ],
-    imageUrl: 'https://i.pinimg.com/1200x/b3/6b/7f/b36b7f2aab3ebc6f291507804edeb231.jpg',
-    imageAlt: 'Targeted deep tissue massage focusing on neck, shoulder and back myofascial release',
+    imageUrl: '/assets/spa/deep_tissue.jpg',
+    imageAlt: 'Targeted deep tissue massage in Vesu Surat focusing on neck, shoulder and back myofascial release',
     isPopular: true
   },
   {
@@ -110,8 +110,8 @@ export const SPA_SERVICES: Service[] = [
       'Known botanical or nut allergies (custom hypoallergenic blends provided)',
       'Early trimester pregnancy (safe pregnancy-specific blends upon consultation)'
     ],
-    imageUrl: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1200,fit=crop/6tBfZAW4uxS8gNOJ/dsc08231-50kb-EwFAVZhDbXuP1f3a.jpg',
-    imageAlt: 'Pure botanical essential oil apothecary and natural herbal essences at Spa Soul',
+    imageUrl: '/assets/spa/aromatherapy.jpg',
+    imageAlt: 'Aromatherapy body massage in Surat with pure botanical essential oil apothecary at Spa Soul',
     isPopular: true
   },
   {
@@ -149,7 +149,7 @@ export const SPA_SERVICES: Service[] = [
       'Recent joint dislocations or ligament tears'
     ],
     imageUrl: '/assets/spa/thai_yoga.jpg',
-    imageAlt: 'Traditional Thai Nuad Boran stretching massage and energy balancing',
+    imageAlt: 'Traditional Thai massage in Surat with Nuad Boran passive yoga stretching at Spa Soul',
     isPopular: false
   },
   {
@@ -186,7 +186,7 @@ export const SPA_SERVICES: Service[] = [
       'Acute open wounds or severe sunburn'
     ],
     imageUrl: '/assets/spa/full_body.jpg',
-    imageAlt: 'Comprehensive full body massage with soothing therapeutic strokes',
+    imageAlt: 'Full body massage in Vesu Surat for complete bodily rejuvenation and tension relief',
     isPopular: false
   },
   {
@@ -221,8 +221,8 @@ export const SPA_SERVICES: Service[] = [
     contraindications: [
       'Standard general massage contraindications apply individually'
     ],
-    imageUrl: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1200,fit=crop/6tBfZAW4uxS8gNOJ/dsc08262-50kb-cPk9HggfE6129RpE.jpg',
-    imageAlt: 'Romantic couple spa suite with plush double beds and candlelit ambiance at Spa Soul Surat',
+    imageUrl: '/assets/spa/couple_spa.jpg',
+    imageAlt: 'Couple spa in Vesu Surat in VIP royal suite with twin beds and floral candlelit ambience at Spa Soul',
     isPopular: true
   },
   {
@@ -257,8 +257,8 @@ export const SPA_SERVICES: Service[] = [
     contraindications: [
       'Active fever or contagious dermatological conditions'
     ],
-    imageUrl: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1200,fit=crop/6tBfZAW4uxS8gNOJ/dsc08251-50kb-qT3OzhnKW970zBwH.jpg',
-    imageAlt: 'Peaceful relaxation massage therapy room with warm candle and clean linens',
+    imageUrl: '/assets/spa/relaxation.jpg',
+    imageAlt: 'Relaxation massage at luxury spa in Surat for central nervous system decompression',
     isPopular: false
   },
   {
@@ -296,7 +296,7 @@ export const SPA_SERVICES: Service[] = [
       'Severe open foot ulcers'
     ],
     imageUrl: '/assets/spa/reflexology.jpg',
-    imageAlt: 'Soothing botanical foot reflexology soak and acupressure therapy',
+    imageAlt: 'Foot reflexology massage and therapeutic acupressure at best spa in Surat',
     isPopular: false
   },
   {
@@ -333,7 +333,7 @@ export const SPA_SERVICES: Service[] = [
       'Within 24 hours of shaving or waxing'
     ],
     imageUrl: '/assets/spa/body_scrub.jpg',
-    imageAlt: 'Natural mineral sea salt body scrub and exfoliating botanical herbs',
+    imageAlt: 'Exfoliating mineral body scrub and skin polishing at luxury spa in Vesu Surat',
     isPopular: false
   },
   {
@@ -369,8 +369,8 @@ export const SPA_SERVICES: Service[] = [
       'Active severe cystic acne breakouts',
       'Recent chemical peels or laser treatments (within 14 days)'
     ],
-    imageUrl: 'https://i.pinimg.com/1200x/60/49/2c/60492cb2c9462eed91a9b27b715295b6.jpg',
-    imageAlt: 'Relaxing luxury botanical facial therapy and skin rejuvenation at Spa Soul',
+    imageUrl: '/assets/spa/facial.jpg',
+    imageAlt: 'Customized botanical facial treatment and glow ritual at Spa Soul luxury wellness sanctuary Surat',
     isPopular: true
   }
 ];

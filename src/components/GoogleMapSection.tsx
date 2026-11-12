@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { MapPin, Navigation, Phone, Mail, Clock, Check, Copy } from 'lucide-react';
 import { BUSINESS_INFO, GOOGLE_MAPS_EMBED_URL, GOOGLE_MAPS_DIRECTIONS_URL } from '../data/business';
-import { trackDirectionsClick } from '../utils/analytics';
+import { trackDirectionsClick, trackPhoneCall } from '../utils/analytics';
 
 export const GoogleMapSection: React.FC = () => {
   const [copied, setCopied] = useState(false);
@@ -23,7 +23,7 @@ export const GoogleMapSection: React.FC = () => {
             Find Serenity at Spa Soul
           </h2>
           <p className="text-sm text-[#3B2A40] mt-3 leading-relaxed font-normal">
-            4QXG+JCJ, Someshwara Enclave, Vesu, Surat, Gujarat 395007, India.
+            {BUSINESS_INFO.address.fullFormatted}
           </p>
         </div>
 
@@ -61,6 +61,7 @@ export const GoogleMapSection: React.FC = () => {
                       href={GOOGLE_MAPS_DIRECTIONS_URL}
                       target="_blank"
                       rel="noopener noreferrer"
+                      onClick={() => trackDirectionsClick('Google Map Info')}
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#1F1424] hover:text-[#7D4971] transition-colors"
                     >
                       <Navigation className="w-3.5 h-3.5 text-[#8C6830]" />
@@ -109,6 +110,7 @@ export const GoogleMapSection: React.FC = () => {
                   <p className="text-sm font-bold text-[#1F1424]">Direct Spa Desk</p>
                   <a
                     href={`tel:${BUSINESS_INFO.phone}`}
+                    onClick={() => trackPhoneCall('Google Map Section')}
                     className="text-sm font-mono font-bold text-[#1F1424] hover:text-[#7D4971] transition-colors"
                   >
                     {BUSINESS_INFO.phoneDisplay}
@@ -139,6 +141,7 @@ export const GoogleMapSection: React.FC = () => {
                 href={GOOGLE_MAPS_DIRECTIONS_URL}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackDirectionsClick('Google Map Section Bottom')}
                 className="w-full py-3.5 px-4 rounded-lg bg-[#38162B] text-white text-xs font-bold uppercase tracking-wider text-center block hover:bg-[#522144] transition-colors shadow-xs"
               >
                 Open in Google Maps
@@ -160,10 +163,10 @@ export const GoogleMapSection: React.FC = () => {
                 Spa Soul
               </h4>
               <p className="text-[11px] text-[#3B2A40] mt-1 leading-snug">
-                4QXG+JCJ, Someshwara Enclave, Vesu, Surat
+                3rd Floor, Safal Square, S-10, Vesu, Surat
               </p>
               <p className="text-[10px] text-[#8C6830] font-semibold mt-0.5">
-                Someshwara Enclave, Vesu
+                Safal Square, Vesu
               </p>
               <div className="mt-2.5 flex items-center justify-between gap-2 pt-2 border-t border-[#F0E6D8] text-[11px]">
                 <span className="text-[#8C6830] font-bold">★ 4.9 · Luxury Spa</span>
@@ -181,7 +184,7 @@ export const GoogleMapSection: React.FC = () => {
             </div>
 
             <iframe
-              title="Spa Soul - 4QXG+JCJ, Someshwara Enclave, Vesu, Surat"
+              title="Spa Soul - 3rd Floor, Safal Square, S-10, Vesu, Surat"
               src={GOOGLE_MAPS_EMBED_URL}
               width="100%"
               height="100%"

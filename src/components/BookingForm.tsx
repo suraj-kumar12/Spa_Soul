@@ -5,7 +5,8 @@ import { z } from 'zod';
 import { CheckCircle2, Clock, Calendar, Phone, Mail, User, Sparkles, Loader2, AlertCircle } from 'lucide-react';
 import { SPA_SERVICES } from '../data/services';
 import { BUSINESS_INFO } from '../data/business';
-import { trackBookingSubmission } from '../utils/analytics';
+import { WhatsAppIcon } from './WhatsAppIcon';
+import { trackBookingSubmission, trackPhoneCall, trackWhatsAppClick } from '../utils/analytics';
 
 const bookingSchema = z.object({
   fullName: z
@@ -130,17 +131,29 @@ export const BookingForm: React.FC<BookingFormProps> = ({ initialTreatment }) =>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
           <a
+            href={`https://wa.me/${BUSINESS_INFO.whatsapp}?text=${encodeURIComponent(
+              `Hello Spa Soul, I have submitted an appointment request for ${submissionSuccess.treatment} on ${submissionSuccess.preferredDate} at ${submissionSuccess.preferredTime} (Ref: ${bookingRef}). Please confirm.`
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackWhatsAppClick('Booking Confirmation', bookingRef)}
+            className="w-full sm:w-auto px-6 py-3 rounded-md bg-[#25D366] text-white text-xs font-bold uppercase tracking-wider hover:bg-[#1EBE5D] transition-colors flex items-center justify-center gap-2 shadow-sm"
+          >
+            <WhatsAppIcon className="w-4 h-4 text-white" /> Confirm on WhatsApp
+          </a>
+          <a
             href={`tel:${BUSINESS_INFO.phone}`}
+            onClick={() => trackPhoneCall('Booking Confirmation')}
             className="w-full sm:w-auto px-6 py-3 rounded-md bg-[#38162B] text-white text-xs font-bold uppercase tracking-wider hover:bg-[#522144] transition-colors flex items-center justify-center gap-2 shadow-sm"
           >
-            <Phone className="w-4 h-4" /> Call Reception: {BUSINESS_INFO.phoneDisplay}
+            <Phone className="w-4 h-4" /> Call: {BUSINESS_INFO.phoneDisplay}
           </a>
           <button
             type="button"
             onClick={handleReset}
             className="w-full sm:w-auto px-5 py-3 rounded-md border-2 border-[#1F1424] text-[#1F1424] text-xs font-bold hover:bg-[#FAF8F5] transition-colors cursor-pointer"
           >
-            Request Another Session
+            New Session
           </button>
         </div>
       </div>

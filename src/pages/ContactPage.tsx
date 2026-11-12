@@ -5,7 +5,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle2, Navigation, AlertCircle, MessageSquare } from 'lucide-react';
 import { WhatsAppIcon } from '../components/WhatsAppIcon';
-import { BUSINESS_INFO, GOOGLE_MAPS_DIRECTIONS_URL } from '../data/business';
+import { BUSINESS_INFO, GOOGLE_MAPS_DIRECTIONS_URL, TARGET_KEYWORDS_STRING } from '../data/business';
 import { SEOHead } from '../components/SEOHead';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { trackContactSubmission } from '../utils/analytics';
@@ -42,10 +42,10 @@ export const ContactPage: React.FC = () => {
   return (
     <div className="bg-white">
       <SEOHead
-        title="Contact Spa Soul | Spa in Vesu, Surat"
-        description="Get directions, phone number, and operating hours for Spa Soul at Someshwara Enclave, Vesu, Surat. Direct WhatsApp concierge and appointments available."
+        title="Contact & Directions | Spa in Vesu Surat | Spa Soul"
+        description="Find Spa Soul at 3rd Floor, Safal Square, S-10, Vesu, Surat. Direct contact, instant WhatsApp concierge, and Google Maps directions for the best spa in Surat."
         canonicalPath="/contact"
-        keywords="contact spa soul, spa in vesu surat, spa near me, spa soul phone number, spa soul address surat, best spa in surat"
+        keywords={TARGET_KEYWORDS_STRING}
         breadcrumbs={[{ name: 'Contact', item: '/contact' }]}
       />
 
@@ -56,18 +56,18 @@ export const ContactPage: React.FC = () => {
           <div className="inline-block mb-3">
             <img
               src="/assets/aistudio/image_7dcfa224.png"
-              alt="Spa Soul"
+              alt="Spa Soul - Contact Spa in Vesu Surat"
               className="h-14 w-auto object-contain mx-auto"
             />
           </div>
           <p className="text-xs uppercase tracking-widest text-[#8C6830] font-bold mb-2">
-            Get in Touch
+            Get in Touch · Vesu Surat
           </p>
           <h1 className="font-serif text-4xl sm:text-5xl font-bold text-[#1F1424]" style={{ textWrap: 'balance' }}>
             Contact Spa Soul Surat
           </h1>
           <p className="text-base text-[#3B2A40] mt-3 leading-relaxed font-normal">
-            Have questions about our treatments, private couple suites, or custom wellness packages? Our team is at your service.
+            Have questions about our treatments, private couple suites, or custom wellness packages? Our team is at your service at Safal Square, Vesu.
           </p>
         </div>
       </section>

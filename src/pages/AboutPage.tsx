@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Sparkles, ShieldCheck, Heart, Droplets, ArrowRight } from 'lucide-react';
-import { BUSINESS_INFO } from '../data/business';
+import { BUSINESS_INFO, TARGET_KEYWORDS_STRING } from '../data/business';
 import { FallbackImage } from '../components/FallbackImage';
 import { SEOHead } from '../components/SEOHead';
 import { Breadcrumbs } from '../components/Breadcrumbs';
@@ -10,10 +10,10 @@ export const AboutPage: React.FC = () => {
   return (
     <div className="bg-white">
       <SEOHead
-        title="About Spa Soul | Luxury Wellness Sanctuary in Surat"
-        description="Discover the philosophy, pristine hygiene standards, and ethical botanical artistry behind Spa Soul, the premier luxury massage sanctuary in Vesu, Surat."
+        title="About Spa Soul | Luxury Spa in Vesu Surat"
+        description="Learn about Spa Soul, the premier luxury spa in Vesu Surat offering full body massage, couple spa therapies, authentic Thai massage, and hospital-grade hygiene at Safal Square, Vesu."
         canonicalPath="/about"
-        keywords="about spa soul, luxury spa in vesu surat, massage spa in vesu, wellness centre in surat, professional body massage surat"
+        keywords={TARGET_KEYWORDS_STRING}
         breadcrumbs={[{ name: 'About', item: '/about' }]}
       />
 
@@ -24,18 +24,18 @@ export const AboutPage: React.FC = () => {
           <div className="inline-block mb-3">
             <img
               src="/assets/aistudio/image_7dcfa224.png"
-              alt="Spa Soul"
+              alt="Spa Soul - Luxury Spa in Vesu Surat"
               className="h-14 w-auto object-contain mx-auto"
             />
           </div>
           <p className="text-xs uppercase tracking-widest text-[#8C6830] font-bold mb-2">
-            About Spa Soul
+            About Spa Soul · Vesu Surat
           </p>
           <h1 className="font-serif text-4xl sm:text-5xl font-bold leading-tight text-[#1F1424]" style={{ textWrap: 'balance' }}>
             A Sanctuary Dedicated to the Restoration of Human Vitality
           </h1>
           <p className="text-base text-[#3B2A40] mt-4 leading-relaxed font-normal">
-            Founded with the belief that true wellness is born from intentional touch, pure botanicals, and unhurried stillness in the heart of Surat.
+            Spa Soul was founded with the belief that true wellness is born from intentional touch, pure botanicals, and unhurried stillness at Safal Square, Vesu, Surat.
           </p>
         </div>
       </section>
@@ -59,7 +59,7 @@ export const AboutPage: React.FC = () => {
               </p>
 
               <p className="text-sm sm:text-base text-[#3B2A40] leading-relaxed">
-                Nestled within <strong className="text-[#1F1424] font-bold">Someshwara Enclave, Vesu, Surat</strong>, our centre is purposefully insulated from the surrounding city bustle. We designed our private therapy suites with sound-dampening architectural elements, soft indirect lighting, and ambient acoustics to foster an immediate sense of nervous system decompression.
+                Nestled within <strong className="text-[#1F1424] font-bold">Safal Square, Vesu, Surat</strong>, our centre is purposefully insulated from the surrounding city bustle. We designed our private therapy suites with sound-dampening architectural elements, soft indirect lighting, and ambient acoustics to foster an immediate sense of nervous system decompression.
               </p>
 
               <p className="text-sm sm:text-base text-[#3B2A40] leading-relaxed">
@@ -139,7 +139,7 @@ export const AboutPage: React.FC = () => {
                 Experience Spa Soul in Person
               </h2>
               <p className="text-sm text-[#3B2A40] leading-relaxed font-normal">
-                Located at 4QXG+JCJ, Someshwara Enclave, Vesu, Surat, Gujarat 395007, India. Open daily from 10:00 AM to 09:30 PM.
+                Located at 3rd Floor, Safal Square, S-10, Vesu, Surat, Gujarat 395007, India. Open daily from 10:00 AM to 09:30 PM.
               </p>
             </div>
 

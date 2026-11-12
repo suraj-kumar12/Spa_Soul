@@ -9,8 +9,8 @@ export const TermsPage: React.FC = () => {
   return (
     <div className="bg-white pb-24">
       <SEOHead
-        title="Terms & Conditions | Spa Soul Surat"
-        description="Terms of service, modesty draping, and appointment scheduling conditions for Spa Soul in Surat."
+        title="Terms & Conditions | Spa Soul Luxury Spa Surat"
+        description="Terms of service, professional code of conduct, and appointment scheduling conditions for Spa Soul in Vesu, Surat."
         canonicalPath="/terms"
         breadcrumbs={[{ name: 'Terms & Conditions', item: '/terms' }]}
       />
@@ -22,7 +22,7 @@ export const TermsPage: React.FC = () => {
           <div className="inline-block mb-3">
             <img
               src="/assets/aistudio/image_7dcfa224.png"
-              alt="Spa Soul"
+              alt="Spa Soul - Luxury Spa in Vesu Surat"
               className="h-12 w-auto object-contain mx-auto"
             />
           </div>
@@ -46,7 +46,7 @@ export const TermsPage: React.FC = () => {
               1. Acceptance of Terms
             </h2>
             <p>
-              By accessing this website or scheduling treatments at <strong>Spa Soul</strong> (4QXG+JCJ, Someshwara Enclave, Vesu, Surat, Gujarat 395007, India), you acknowledge and agree to abide by the policies and conditions outlined herein.
+              By accessing this website or scheduling treatments at <strong>Spa Soul</strong> (3rd Floor, Safal Square, S-10, Vesu, Surat, Gujarat 395007, India), you acknowledge and agree to abide by the policies and conditions outlined herein.
             </p>
           </div>
 

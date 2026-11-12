@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Search, Sparkles, Clock, ArrowRight, Check } from 'lucide-react';
 import { SPA_SERVICES } from '../data/services';
+import { TARGET_KEYWORDS_STRING } from '../data/business';
 import { FallbackImage } from '../components/FallbackImage';
 import { SEOHead } from '../components/SEOHead';
 import { Breadcrumbs } from '../components/Breadcrumbs';
@@ -25,10 +26,10 @@ export const ServicesPage: React.FC = () => {
   return (
     <div className="bg-white pb-24">
       <SEOHead
-        title="Spa & Body Massage Services in Surat | Spa Soul"
-        description="Explore 10 signature body massage and therapeutic rituals at Spa Soul Surat. Swedish, Deep Tissue, Thai, Aromatherapy, Foot Reflexology, and VIP Couple suites."
+        title="Spa Services & Full Body Massage in Vesu Surat | Spa Soul"
+        description="Explore 10 signature therapies at Spa Soul: full body massage in Vesu Surat, couple spa in Vesu Surat, Thai massage in Surat, deep tissue, and luxury body scrubs."
         canonicalPath="/services"
-        keywords="spa services surat, body massage in surat, thai massage in surat, full body massage in surat, deep tissue massage surat, couple spa surat"
+        keywords={TARGET_KEYWORDS_STRING}
         breadcrumbs={[{ name: 'Services', item: '/services' }]}
       />
 
@@ -39,18 +40,18 @@ export const ServicesPage: React.FC = () => {
           <div className="inline-block mb-3">
             <img
               src="/assets/aistudio/image_7dcfa224.png"
-              alt="Spa Soul"
+              alt="Spa Soul - Spa & Body Massage in Vesu Surat"
               className="h-14 w-auto object-contain mx-auto"
             />
           </div>
           <p className="text-xs uppercase tracking-widest text-[#8C6830] font-bold mb-2">
-            Therapeutic Menu
+            Therapeutic Menu · Vesu Surat
           </p>
           <h1 className="font-serif text-4xl sm:text-5xl font-bold text-[#1F1424]" style={{ textWrap: 'balance' }}>
-            Our Spa & Massage Therapies
+            Our Spa & Full Body Massage Therapies
           </h1>
           <p className="text-base text-[#3B2A40] mt-3 leading-relaxed font-normal">
-            Ten bespoke rituals curated to melt fatigue, ease neuromuscular tension, and cultivate deep bodily peace in Surat.
+            Ten bespoke rituals curated to melt fatigue, ease neuromuscular tension, and cultivate deep bodily peace at Safal Square, Vesu, Surat.
           </p>
         </div>
       </section>

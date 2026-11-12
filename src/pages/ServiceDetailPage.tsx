@@ -30,10 +30,10 @@ export const ServiceDetailPage: React.FC = () => {
   return (
     <div className="bg-white pb-24">
       <SEOHead
-        title={`${service.name} in Surat | Spa Soul Sanctuary`}
-        description={`${service.description} Experience authentic ${service.name} at Spa Soul in Someshwara Enclave, Vesu, Surat. Starting at ${service.pricePlaceholder}.`}
+        title={`${service.name} in Vesu Surat | Spa Soul Sanctuary`}
+        description={`Experience authentic ${service.name} in Vesu Surat at Spa Soul. ${service.tagline} Located at Safal Square, Vesu, Surat. Starting from ${service.pricePlaceholder}.`}
         canonicalPath={`/services/${service.slug}`}
-        keywords={`${service.name.toLowerCase()} surat, ${service.name.toLowerCase()} in vesu, body massage in surat, best ${service.name.toLowerCase()} surat, massage therapy surat`}
+        keywords={`${service.name} in Vesu Surat, ${service.name} in Surat, Spa in Vesu Surat, Full Body Massage in Vesu Surat, Best Spa in Surat, Spa Near Me`}
         schema={getServiceSchema(service)}
         breadcrumbs={breadcrumbsList}
         ogImage={service.imageUrl}

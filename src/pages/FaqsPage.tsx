@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronDown, Search, Sparkles, Phone, HelpCircle } from 'lucide-react';
 import { SPA_FAQS } from '../data/faqs';
-import { BUSINESS_INFO } from '../data/business';
+import { BUSINESS_INFO, TARGET_KEYWORDS_STRING } from '../data/business';
 import { SEOHead } from '../components/SEOHead';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { getFAQSchema } from '../utils/seoSchemas';
@@ -29,10 +29,10 @@ export const FaqsPage: React.FC = () => {
   return (
     <div className="bg-white pb-24">
       <SEOHead
-        title="Spa Soul FAQs | Spa & Massage in Surat"
-        description="Frequently asked questions regarding spa etiquette, hygiene protocols, booking policies, and health precautions at Spa Soul in Vesu, Surat."
+        title="Spa FAQs | Luxury Spa in Vesu Surat | Spa Soul"
+        description="Answers to frequently asked questions about full body massage, couple spa etiquette, hygiene protocols, and booking policies at Spa Soul in Vesu Surat."
         canonicalPath="/faqs"
-        keywords="spa soul faqs, spa massage in surat, spa etiquette surat, massage guidelines vesu, best spa in surat"
+        keywords={TARGET_KEYWORDS_STRING}
         breadcrumbs={[{ name: 'FAQs', item: '/faqs' }]}
         schema={getFAQSchema(SPA_FAQS)}
       />
@@ -44,12 +44,12 @@ export const FaqsPage: React.FC = () => {
           <div className="inline-block mb-3">
             <img
               src="/assets/aistudio/image_7dcfa224.png"
-              alt="Spa Soul"
+              alt="Spa Soul - Spa FAQs in Vesu Surat"
               className="h-14 w-auto object-contain mx-auto"
             />
           </div>
           <p className="text-xs uppercase tracking-widest text-[#8C6830] font-bold mb-2">
-            Help & Guidelines
+            Help & Guidelines · Vesu Surat
           </p>
           <h1 className="font-serif text-4xl sm:text-5xl font-bold text-[#1F1424]" style={{ textWrap: 'balance' }}>
             Frequently Asked Questions

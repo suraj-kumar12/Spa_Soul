@@ -55,7 +55,7 @@ export const VideoShowcase: React.FC<VideoShowcaseProps> = ({ className = '', au
   const handleWhatsAppInquiry = () => {
     trackWhatsAppClick('Video Reel Inquiry', selectedVideo.title);
     const text = encodeURIComponent(
-      `Hello Spa Soul, I watched the "${selectedVideo.title}" film on your website and would like to inquire about booking a similar session at Someshwara Enclave, Vesu, Surat.`
+      `Hello Spa Soul, I watched the "${selectedVideo.title}" film on your website and would like to inquire about booking a similar session at Safal Square, Vesu, Surat.`
     );
     window.open(`https://wa.me/${BUSINESS_INFO.whatsapp}?text=${text}`, '_blank');
   };
